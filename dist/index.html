@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/03407945a4.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@100;200;300;400;500&family=PT+Serif&family=Roboto+Mono:wght@300;400;500;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <img src="./img/baby-melo.jpg" alt="" class="bg">
+        <div class="player">
+            <img src="./img/pic.jpg" alt="" class="player__img">
+            <h1 class="player__song-name">unnammed</h1>
+            <h2 class="player__song-author">unknow</h2>
+
+            <div class="player__times">
+                <div class="player__now">0:00</div>
+                <div class="player__ost">-0:00</div>
+            </div>
+
+            <input type="range" value="0" max="100" class="player__progress">
+
+            <div class="player__controls">
+                <i class="fa-solid fa-backward" id="prev"></i>
+                <i class="fa-solid fa-play" id="player__main-control"></i>
+                <i class="fa-solid fa-forward" id="next"></i>
+            </div>
+
+            <div class="player__settings">
+                <i class="fa-solid fa-repeat player__repeat "></i>
+                <i class="fa-solid fa-align-left player__textBtn"></i>
+            </div>
+
+            <div class="player__text">
+                <div class="player__text-control">
+                    <i class="fa-solid fa-arrow-left textOff"></i>
+                </div>
+                <div class="player__lyric"></div>
+            </div>
+
+        </div>
+    </section>
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>
