@@ -44,13 +44,17 @@ section {
   width: 230px;
   border-radius: 12px;
   margin: 0 auto;
-  box-shadow: 0 0 30px 2px #000;
+  box-shadow: 0 0 20px 2px #000000;
+  transition: 0.15s;
+}
+.player__img:hover {
+  box-shadow: 0 0 25px 5px #000;
 }
 .player__song-name {
   font-size: 20px;
   font-weight: 400;
   color: #333;
-  margin-top: 12px;
+  margin-top: 27px;
   text-align: center;
 }
 .player__song-author {
@@ -64,7 +68,7 @@ section {
   height: 20px;
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
+  margin-top: 2px;
   font-size: 15px;
   font-weight: 100;
 }
@@ -95,24 +99,25 @@ section {
   justify-content: space-between;
   align-items: center;
 }
-.player__settings i {
+.player__repeat {
   font-size: 30px;
   cursor: pointer;
   opacity: 0.5;
-  transition: 0.35s all;
-}
-.player__settings i:hover {
-  opacity: 1;
-}
-.player:hover {
-  opacity: 1;
-}
-.player__repeat {
-  font-size: 30px;
-  opacity: 0.5;
-  transition: 0.5s all;
+  transition: 0.3s all;
 }
 .player__repeat_active {
+  opacity: 0.8;
+}
+.player__repeat:hover {
+  opacity: 0.8;
+}
+.player__textBtn {
+  font-size: 30px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.3s all;
+}
+.player__textBtn:hover {
   opacity: 0.8;
 }
 .player__text {
